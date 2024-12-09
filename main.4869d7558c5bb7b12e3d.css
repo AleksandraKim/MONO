@@ -286,7 +286,7 @@ legend {
     height: 12px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .header {
     height: 65px;
     padding-left: 16px !important;
