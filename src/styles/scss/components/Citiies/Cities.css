@@ -1,0 +1,146 @@
+.main__section:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main__section:nth-child(3) .map {
+  width: 100%;
+}
+.main__section:nth-child(3) .main__section-cities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 1300px;
+  min-height: 650px;
+  max-height: 1400px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.main__section-city {
+  width: 300px;
+  height: 310px;
+  gap: 0px;
+  border-radius: 20px;
+  opacity: 0px;
+  background-color: #F5F5F5;
+  padding: 33px 16px 40px 22px;
+}
+.main__section-city:last-child {
+  width: 630px;
+  height: 310px;
+  gap: 0px;
+  border-radius: 20px;
+  opacity: 0px;
+  background-color: #F5F5F5;
+  padding: 33px 16px 40px 22px;
+}
+.main__section-city h3 {
+  font-family: "Road Radio";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 28.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #262633;
+  margin-bottom: 15px;
+}
+.main__section-city .phone {
+  font-family: "Golos";
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #262633;
+  margin-bottom: 10px;
+  white-space: wrap;
+}
+.main__section-city .adress {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Golos";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #797986;
+}
+.main__section-city .wayToAdress {
+  color: #BF2738;
+}
+.main__section-city .timeOfWorking {
+  font-family: "Golos";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #262633;
+  margin-top: 20px;
+}
+
+.map {
+  height: 600px;
+}
+
+@media only screen and (max-width: 800px) {
+  .main__section:nth-child(3) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .main__section:nth-child(3) .map {
+    height: 480px;
+  }
+  .main__section:nth-child(3) .main__section-cities {
+    gap: 10px;
+    width: 710px;
+    min-height: 1000px;
+    max-height: 2950px;
+    margin-top: 59px;
+    margin-bottom: 60px;
+  }
+  .main__section-city {
+    width: 350px;
+  }
+  .main__section-city:last-child {
+    width: 100%;
+    height: 270px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main__section:nth-child(3) .main__section-cities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .main__section:nth-child(3) .main__section-cities .main__section-city {
+    width: 95%;
+  }
+  .main__section:nth-child(3) .main__section-cities .main__section-city:last-child {
+    width: 95%;
+    height: 360px;
+  }
+  .main__section:nth-child(3) .main__section-cities .main__section-city .phone {
+    white-space: wrap;
+  }
+}/*# sourceMappingURL=Cities.css.map */
