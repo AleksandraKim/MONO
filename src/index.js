@@ -1,4 +1,5 @@
 import './styles/css/styles.css';
+import "./biblioteka";
 import MenuImage from "../src/assets/images/Меню.svg";
 import ImageSravn from "../src/assets/images/Сравение.svg";
 import ImagePoisk from "../src/assets/images/Поиск.svg";
@@ -11,6 +12,13 @@ const poisk = document.querySelector(".header__nav-poisk");
 const logo = document.querySelector(".header__nav-logo");
 const texts = document.querySelectorAll('.inputs__text');
 const textarea = document.querySelector('.textarea');
+const tel = document.querySelector('#tel');
+
+IMask(
+   tel,
+   {mask:'0(000)000-00-00'}
+)
+
 
 const LogoImage = document.createElement('img');
 LogoImage.src = ImageLogo;
@@ -29,13 +37,14 @@ img.src = MenuImage;
 menu.appendChild(img);
 
 window.addEventListener("resize", function () {
-   if (window.matchMedia("(min-width:400px) and (max-width: 800px)").matches) {
+   if (window.matchMedia("(min-width:500px) and (max-width: 1300px)").matches) {   
       LogoImage.src = ImageLogoSecond
    } else if (window.matchMedia("(min-width:800px)").matches) {
       LogoImage.src = ImageLogo
-   } else if (window.matchMedia("(max-width:400px)").matches) {
+   } else if (window.matchMedia("(max-width:500px)").matches) {
       LogoImage.src = ImageLogo
-   }})
+   }
+})
 
 document.querySelector('form').onsubmit = function (event) {
    event.preventDefault();
