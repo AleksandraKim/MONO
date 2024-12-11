@@ -1,0 +1,374 @@
+.main__section:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1300px;
+  margin: 60px auto;
+}
+.main__section:nth-child(2) .main__section-info {
+  display: flex;
+  flex-direction: column;
+}
+.main__section:nth-child(2) .main__section-contacts {
+  display: flex;
+  flex-direction: column;
+}
+.main__section:nth-child(2) .main__section-contacts a:first-child {
+  font-family: "Road Radio";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #262633;
+}
+.main__section:nth-child(2) .main__section-contacts a:nth-child(2) {
+  font-family: "Golos";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #BF2738;
+}
+.main__section:nth-child(2) .main__section-name {
+  font-family: "Golos";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18.7px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #262633;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.main__section:nth-child(2) .main__section-data {
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  justify-content: space-between;
+}
+.main__section:nth-child(2) .main__section-data .main__section-text {
+  font-family: "Golos";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #808080;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form h2 {
+  font-family: "Road Radio";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  margin-bottom: 20px;
+}
+.form .form__person {
+  display: flex;
+  flex-direction: column;
+}
+
+.form .input.check {
+  border: 1px solid #E6E6E6 !important;
+  background-color: #FFFFFF !important;
+}
+
+.form .input.blur {
+  border: 0px solid #E6E6E6 !important;
+  background-color: #F5F5F5 !important;
+}
+
+.form .textarea.check {
+  border: 1px solid #E6E6E6 !important;
+  background-color: #FFFFFF !important;
+}
+
+.form .textarea.blur {
+  border: 0px solid #E6E6E6 !important;
+  background-color: #F5F5F5 !important;
+}
+
+.form .textarea.error {
+  background-color: rgba(191, 39, 56, 0.1215686275);
+}
+.form .textarea.error::-moz-placeholder {
+  color: #BF2738;
+}
+.form .textarea.error::placeholder {
+  color: #BF2738;
+}
+
+.form .input.error {
+  background-color: rgba(191, 39, 56, 0.1215686275) !important;
+}
+
+.form .label.error {
+  color: #BF2738;
+}
+
+.form .label.template {
+  top: 0px;
+  font-size: 12px;
+}
+
+#inputs__textMob {
+  display: none;
+}
+
+.form__person-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.form__person-inputs .inputs__text .input {
+  width: 300px;
+  height: 52px;
+  padding: 17px 203px 11px 20px;
+  gap: 0px;
+  border-radius: 14px;
+  opacity: 0px;
+  background-color: #F5F5F5;
+  transition: border 0.15s ease-in-out;
+}
+.form__person-inputs .inputs__text .input:hover {
+  border: 1px solid #E6E6E6;
+  background-color: #FFFFFF;
+}
+.form__person-inputs .inputs__text .input .show {
+  background-color: #FFFFFF;
+  border: 1px solid #F5F5F5;
+}
+.form__person-inputs .label {
+  top: 14px;
+  left: 5px;
+  position: absolute;
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #5E5E5E;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.inputs__text {
+  position: relative;
+}
+.inputs__text:focus .input {
+  background-color: #FFFFFF;
+}
+
+.input:not(:-moz-placeholder-shown):focus + .label {
+  top: 0px;
+  left: 5px;
+  font-size: 12px;
+}
+.input:not(:placeholder-shown):focus + .label {
+  top: 0px;
+  left: 5px;
+  font-size: 12px;
+}
+.input:focus + .label {
+  top: 0px;
+  left: 5px;
+  font-size: 12px;
+}
+
+.textarea {
+  box-sizing: border-box;
+  width: 630px;
+  height: 133px;
+  padding: 17px 475px 92px 20px;
+  gap: 0px;
+  border-radius: 14px;
+  outline: none;
+  opacity: 0px;
+  background-color: #F5F5F5;
+  margin-bottom: 20px;
+}
+
+.form__person .button {
+  width: 190px;
+  height: 52px;
+  padding: 0px 36px 0px 37px;
+  gap: 0px;
+  border-radius: 14px;
+  opacity: 0px;
+  background-color: #BF2738;
+  font-family: "Road Radio";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+.form__person .button:hover {
+  background-color: #FFFFFF;
+  color: #262633;
+  border: 1px solid #BF2738;
+  white-space: nowrap;
+}
+.form__person label {
+  font-family: "Golos";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #808080;
+  margin-left: 16px;
+}
+.form__person span {
+  color: #262633;
+}
+
+.form__person-check {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 1300px) {
+  .main__section:nth-child(2) {
+    width: 700px;
+    margin: 40px auto;
+  }
+  .main__section:nth-child(2) .main__section-contacts a:first-child {
+    font-size: 28px;
+    line-height: 33px;
+    white-space: nowrap;
+  }
+  .main__section:nth-child(2) .main__section-name {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .main__section:nth-child(2) .main__section-data {
+    height: 380px;
+  }
+  .main__section-info {
+    width: 287px;
+  }
+  .form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form h2 {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .form .form__person {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__person-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    gap: 10px;
+  }
+  .form__person-inputs .input {
+    min-width: 350px;
+    max-width: 350px;
+    height: 52px;
+  }
+  .textarea {
+    width: 350px;
+    height: 166px;
+    padding: 17px 0px 92px 0px;
+    margin-bottom: 20px;
+  }
+  .textarea::-moz-placeholder {
+    padding-left: 20px;
+  }
+  .textarea::placeholder {
+    padding-left: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .main__section:nth-child(2) {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 30px;
+  }
+  .main__section:nth-child(2) .main__section-info {
+    width: 100%;
+  }
+  .main__section:nth-child(2) .input {
+    width: 100%;
+  }
+  .main__section:nth-child(2) .textarea {
+    width: 100%;
+  }
+  #inputs__textMob {
+    display: block;
+  }
+  .form {
+    margin-top: 50px;
+    width: 90vw;
+  }
+  .form h2 {
+    font-size: 20px;
+  }
+  .form__inputs {
+    width: 100%;
+    flex-direction: column;
+  }
+  .form__person-check {
+    width: 100%;
+  }
+  .form__person-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    gap: 10px;
+  }
+  .form__person-inputs .input {
+    min-width: 100%;
+    max-width: 100%;
+    height: 52px;
+  }
+  .textarea {
+    min-width: 100%;
+    max-width: 100%;
+    height: 166px;
+    padding: 17px 0px 92px 16px;
+    margin-bottom: 20px;
+  }
+  .textarea::-moz-placeholder {
+    padding-left: 5px;
+  }
+  .textarea::placeholder {
+    padding-left: 5px;
+  }
+  #inputs__textWeb {
+    display: none;
+  }
+}/*# sourceMappingURL=Form.css.map */
