@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Monevac">
+    <meta property="og:description" content="Общество с ограниченной ответственностью «МОНЕВАК» Сокращенное наименование: ООО «МОНЕВАК»">
+    <meta property="og:url" content="https://aleksandrakim.github.io/MONO/">
+    <meta property="og:site_name" content="Monevac запчасти и оборудование">
+    <meta property="og:locale" content="ru">
     <title>MONEVAC</title>
+    
 </head>
 <body>
   <header class="header">
-    <nav class="header__nav">
-        <a href="#" class="header__nav-menu"></a>
-        <div class="header__nav-pages">
-            <a href="#" class="header__nav-link">Упаковка</a>
-            <a href="#" class="header__nav-link">Оборудование</a>
-            <a href="#" class="header__nav-link">Сервис и запчасти</a>
+    <nav class="header__nav" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <a class="header__nav-menu"></a>
+        <div class="header__nav-pages" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="/upakovka/" title="Упаковка" itemprop="item" class="header__nav-link">
+                <span itemprop="name">Упаковка</span>
+                <meta itemprop="position" content="0" />
+            </a>
+            <a href="/oborudovanie/" title="Оборудование" itemprop="item" class="header__nav-link">
+                <span itemprop="name">Оборудование</span>
+                <meta itemprop="position" content="1" />
+            </a>
+            <a href="/service-zapchasti/" title="Сервис и запчасти" itemprop="item" class="header__nav-link">
+                <span itemprop="name">Сервис и запчасти</span>
+                <meta itemprop="position" content="2" />
+            </a>
         </div>
         <a href="#" class="header__nav-logo"></a>
         <div class="header__nav-icons">
@@ -21,7 +37,7 @@
         </div>
         <div class="header__nav-contacts">
             <a href="tel:+7 (499) 136-17-18" class="phone">+7 (499) 136-17-18</a>
-            <a href="#" class="pochta">info@monevac.ru</a>
+            <a href="mailto:info@monevac.ru" class="pochta">info@monevac.ru</a>
         </div>
         <button class="button">ОСТАВИТЬ ЗАЯВКУ</button>
     </nav>
@@ -57,15 +73,19 @@
             <div class="form__person">
                 <div class="form__person-inputs">
                     <div class="inputs__text">
-                        <input type="text" class="input" placeholder="" >
-                        <label for="adress" class="label">Ваше имя</label>
+                        <input type="text" class="input" id="name" placeholder="" >
+                        <label for="name" class="label">Ваше имя</label>
                     </div>
-                    <div class="inputs__text">
-                        <input type="text" class="input" placeholder="" >
-                        <label for="adress" class="label">Ваша фамилия</label>
+                    <div class="inputs__text" id="inputs__textWeb" >
+                        <input type="text" id="surname" class="input" placeholder="" >
+                        <label for="surname" class="label">Ваша фамилия</label>
+                    </div>
+                    <div class="inputs__text" id="inputs__textMob" >
+                        <input type="tel" id="tel" class="input" placeholder="" >
+                        <label for="tel" class="label">Ваш телефон</label>
                     </div>
                 </div>
-                <textarea class="textarea" name="" id="" placeholder="Ваш текст" ></textarea>
+                <textarea class="textarea" name="text" id="text" placeholder="Ваш текст"></textarea>
                 <div class="form__person-check">
                     <input type="checkbox" class="checkbox" id="check"/>
                     <label for="check">Я подтверждаю свое согласие с политикой в отношении<span class="span"> обработки персональных данных</span></label>
@@ -187,7 +207,7 @@
                 <div class="footer__inner-text">
                     <div class="footer__inner-contacts">
                         <div class="phones">+7 (499) 136-17-18<br> +7 (903) 467-98-51</div>
-                        <div class="pochta">info@monevac.ru</div>
+                        <div class="pochta"><a href="mailto:info@monevac.ru" class="link">info@monevac.ru</a></div>
                     </div>
                     <button class="button">ОБРАТНЫЙ ЗВОНОК</button>
                 </div>
