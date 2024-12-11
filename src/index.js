@@ -38,11 +38,12 @@ menu.appendChild(img);
 
 window.addEventListener("resize", function () {
    if (window.matchMedia("(min-width:500px) and (max-width: 1300px)").matches) {   
-      LogoImage.src = ImageLogoSecond
+      LogoImage.src = ImageLogoSecond;
    } else if (window.matchMedia("(min-width:800px)").matches) {
-      LogoImage.src = ImageLogo
+      LogoImage.src = ImageLogo;
    } else if (window.matchMedia("(max-width:500px)").matches) {
-      LogoImage.src = ImageLogo
+      LogoImage.src = ImageLogo;
+      document.getElementById("text").placeholder="Ваше имя";
    }
 })
 
