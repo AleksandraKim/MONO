@@ -4,6 +4,7 @@ const {CleanWebpackPlugin}=require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack=require('webpack');
 
 const isDev=process.env.NODE_ENV === 'development';
 const isProd=!isDev;
@@ -64,7 +65,12 @@ module.exports={
             patterns: [
               { from: 'src/404.html', to: '404.html' }
             ]
-          })
+          }),
+        new webpack.ProvidePlugin({
+            $:'jquery',
+            jQuery:'jquery',
+            'window.jQuery':'jquery'
+        })
     ],
     module:{
         rules:[
